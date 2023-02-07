@@ -1,0 +1,9 @@
+package Part1;
+
+public class Demo {
+	public static void main(String[] args) {
+		Logger aLogger = Logger.loggersingletonInitiation("bugs.txt");
+		aLogger.write("Desposit XXX");
+		aLogger.write("Withdraw XXX");
+	}
+}
