@@ -1,0 +1,12 @@
+public class Audio implements Component{
+	private String audioFile;
+	public Audio(String aAudioFile) {
+		this.audioFile=aAudioFile;
+	}	
+	public String getContent() {
+		return audioFile;
+	}
+	public Component clone() {
+		return new Audio(this.audioFile);
+	}
+}
