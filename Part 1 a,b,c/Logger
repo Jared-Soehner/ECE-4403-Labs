@@ -1,0 +1,15 @@
+public class Logger {
+	private String fileName;
+	private static Logger instance = null;
+	public static Logger loggersingletonInitiation(String aFileName) {
+		if(instance == null)
+			instance = new Logger(aFileName);
+		return instance;
+	}
+	private Logger(String fileName) {
+		this.fileName = fileName;
+	}
+	public void write(String message) {
+		System.out.println("Writing a message to the log. Which is " + fileName);
+	}
+}
