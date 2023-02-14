@@ -1,0 +1,21 @@
+import java.util.Random;
+import java.util.stream.IntStream;
+
+public class Logger implements Runnable {
+	private String fileName;
+	private static Logger instance = null;
+	public synchronized static Logger loggersingletonInitiation(String aFileName) {
+		if(instance == null)
+			instance = new Logger(aFileName);
+		return instance;
+	}
+	private Logger(String fileName) {
+		this.fileName = fileName;
+	}
+	public void write() {
+		System.out.println("Writing a message to the log. Which is " + fileName);
+	}
+	public void run() {
+		write();
+	}
+}
