@@ -1,0 +1,10 @@
+public class driver {
+	public static void main(String[] args) {
+		String aName = ("Jefary Green");
+		Person aPerson = new Person(aName);
+		adaptor adapt = new adaptor(aPerson);
+		System.out.println(adapt.getFirstName());
+		System.out.println(adapt.getLastName());
+		System.out.println(adapt);
+	}
+}
