@@ -1,0 +1,19 @@
+public class adaptor implements Customer{
+	 private Person aPerson;
+	 
+	 public adaptor(Person aPerson) {
+		 this.aPerson = aPerson;
+	 }
+	 
+	 public String getLastName() {
+		 return aPerson.returnFullName().split(" ")[1];
+	 }
+	 public String getFirstName() {
+		 return aPerson.returnFullName().split(" ")[0];
+	 }
+	 @Override
+	 public String toString() {
+		 return String.format("The First name is " + getFirstName() + " The last name is " + getLastName());
+	 }
+
+}
