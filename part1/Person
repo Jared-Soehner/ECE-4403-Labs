@@ -1,0 +1,18 @@
+public class Person {
+	private String fullName;
+	
+	public Person(String fullName) {
+		this.fullName = fullName;
+	}
+	public void setName(String fullName) {
+		this.fullName = fullName;
+	}
+	protected String returnFullName() {
+		return fullName;
+	}
+	@Override
+	public String toString() {
+		return String.format("Their Full Name is: " + fullName);
+	}
+
+}
