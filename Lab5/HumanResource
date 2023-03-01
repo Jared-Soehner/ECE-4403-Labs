@@ -1,0 +1,5 @@
+public class HumanResource implements interfaceComposite{
+  public void print() {
+    System.out.println("Deploying a human resource");
+  }
+}
