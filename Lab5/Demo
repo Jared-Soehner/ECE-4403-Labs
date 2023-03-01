@@ -1,0 +1,19 @@
+public class Demo {
+	public static void main(String[] args) {
+	ComponentTeams team1 = new ComponentTeams();
+    team1.add(new Truck());
+    team1.add(new HumanResource());
+    team1.add(new HumanResource());
+
+    ComponentTeams team2 = new ComponentTeams();
+    team1.add(new Truck());
+    team1.add(new HumanResource());
+    team1.add(new HumanResource());
+
+    ComponentTeams team3 = new ComponentTeams();
+    team3.add(team1);
+    team3.add(team2);
+
+    team3.print();
+	}
+}
