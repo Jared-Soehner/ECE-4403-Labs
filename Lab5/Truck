@@ -1,0 +1,5 @@
+public class Truck implements interfaceComposite{
+  public void print() {
+    System.out.println("Deploying a truck");
+  }
+}
