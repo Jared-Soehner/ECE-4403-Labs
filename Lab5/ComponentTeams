@@ -1,0 +1,13 @@
+public class ComponentTeams implements interfaceComposite{
+  private List<interfaceComposite> resources = new ArrayList<>();
+
+  public void add(interfaceComposite resource) {
+    resources.add(resource);
+  }
+
+  public void print() {
+	  for(interfaceComposite graphic : resources) {
+		  graphic.print();
+	  }
+  }
+}
