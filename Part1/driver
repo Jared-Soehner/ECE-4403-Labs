@@ -1,0 +1,15 @@
+public class driver {
+	
+	public static void main(String[] args) {
+		iterableCollection collection = new basicConcreateCollection();
+		Iterator iterator = collection.createBasicIterator();
+		Product pd1 = new Product(123,"test");
+		Product pd2 = new Product(321,"test2");
+		Product pd3 = new Product(5213,"test15");
+		iterator.add(pd1);
+		iterator.add(pd2);
+		iterator.add(pd3);
+		iterator.getMore();
+	}
+
+}
