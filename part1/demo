@@ -1,0 +1,14 @@
+public class demo {
+	
+	public static void main(String[] args) {
+		videoEditor ve1 = new videoEditor();
+		Command c1 = new concreteCommandSetText(ve1, "text");
+		c1.execute();
+		Command c2 = new concreteCommandSetText(ve1, "text2");
+		c2.execute();
+		System.out.println(ve1.getText());
+		c2.undo();
+		System.out.println(ve1.getText());
+	}
+
+}
