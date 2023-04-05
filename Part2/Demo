@@ -1,0 +1,20 @@
+public class Demo {
+    public static void main(String[] args) {
+        signUpDialogBox signUpDialogBox = new signUpDialogBox();
+
+        // Simulate user interaction
+        signUpDialogBox.usernameTextBox.setContent("steve");
+        signUpDialogBox.passwordTextBox.setContent("pass123");
+        signUpDialogBox.termsCheckBox.setChecked(true);
+        signUpDialogBox.signUpButton.setEnabled(false);
+        signUpDialogBox.signUpButton.setEnabled(true);
+        signUpDialogBox.passwordTextBox.setContent("");
+        signUpDialogBox.signUpButton.setEnabled(false);
+        signUpDialogBox.passwordTextBox.setContent("pass123");
+        signUpDialogBox.signUpButton.setEnabled(true);
+        signUpDialogBox.signUpButton.setEnabled(true);
+        signUpDialogBox.usernameTextBox.setContent("test");
+        signUpDialogBox.signUpButton.setEnabled(false);
+        
+    }
+}
