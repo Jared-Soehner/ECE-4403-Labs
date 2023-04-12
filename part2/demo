@@ -1,0 +1,16 @@
+public class demo {
+
+	public static void main(String[] args) {
+		DirectionService directionService = new DirectionService(new DrivingState());
+		Object eta = directionService.getEta(); 
+	
+		directionService.setTravelModeState(new BicyclingState());
+		eta = directionService.getEta(); 
+	
+		directionService.setTravelModeState(new TransitState());
+		eta = directionService.getEta(); 
+	
+		directionService.setTravelModeState(new WalkingState());
+		eta = directionService.getEta(); 
+	}
+}
