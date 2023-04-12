@@ -1,0 +1,7 @@
+public class demo {
+	public static void main(String[] args) {
+		String message = "messageToEncript";
+		Context con = new Context(message);
+	}
+
+}
